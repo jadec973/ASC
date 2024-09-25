@@ -58,7 +58,38 @@
     color: #AE312B;
     border-radius: 5px;
  }
+/* Media queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+   .main-head {
+       flex-direction: column;
+       align-items: center;
+   }
 
+   #logocrugel {
+       margin-bottom: 10px;
+   }
+
+   .menu {
+       justify-content: center;
+   }
+
+   .menu div a {
+       margin-right: 10px;
+       font-size: 14px;
+       padding: 8px 12px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   #logocrugel img {
+       max-width: 40px;
+   }
+
+   .menu div a {
+       font-size: 12px;
+       padding: 6px 10px;
+   }
+}
  .actualites-container {
    max-width: 1200px;
    margin: 20px auto;

@@ -58,7 +58,38 @@ section {
    color: #AE312B;
    border-radius: 5px;
 }
+/* Media queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+   .main-head {
+       flex-direction: column;
+       align-items: center;
+   }
 
+   #logocrugel {
+       margin-bottom: 10px;
+   }
+
+   .menu {
+       justify-content: center;
+   }
+
+   .menu div a {
+       margin-right: 10px;
+       font-size: 14px;
+       padding: 8px 12px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   #logocrugel img {
+       max-width: 40px;
+   }
+
+   .menu div a {
+       font-size: 12px;
+       padding: 6px 10px;
+   }
+}
 /* Section des partenaires */
 .logo-grid {
    display: flex;
@@ -109,7 +140,56 @@ section {
    font-size: 18px;
    margin-top: 10px;
 }
+/* Responsive Hero Section */
+@media screen and (max-width: 768px) {
+   .about-us-banner {
+       height: 60vh; /* Réduction de la hauteur pour petits écrans */
+   }
 
+   .about-us-banner h1 {
+       font-size: 50px; /* Taille de texte réduite */
+   }
+
+   .about-us-banner p {
+       font-size: 16px; /* Ajustement de la taille de la description */
+   }
+}
+/* Responsive partenaire Section */
+@media screen and (max-width: 480px) {
+   .about-us-banner {
+       height: 50vh; /* Réduction supplémentaire de la hauteur */
+   }
+
+   .about-us-banner h1 {
+       font-size: 30px; /* Taille de texte plus petite sur mobile */
+   }
+
+   .about-us-banner p {
+       font-size: 14px; /* Réduction de la description pour les très petits écrans */
+   }
+
+   .overlay {
+       padding: 15px; /* Réduction du padding pour éviter trop d'espace */
+       border-radius: 20px; /* Ajustement du radius */
+   }
+}
+
+/* Responsive pour logo-grid */
+@media screen and (max-width: 768px) {
+   .logo-grid {
+       justify-content: center; /* Centrer les logos */
+   }
+
+   .logo-grid img {
+       max-width: 100px; /* Réduire la taille des logos */
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .logo-grid img {
+       max-width: 80px; /* Réduire davantage pour les très petits écrans */
+   }
+}
 #dernier {
    color: #AE312B;
 }
@@ -265,103 +345,3 @@ footer {
    padding: 10px;
 }
 
-/* Responsive Design */
-
-/* Pour tablettes */
-@media (max-width: 1024px) {
-   .main-head {
-      flex-direction: column;
-      padding: 20px;
-   }
-
-   .menu {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .menu div a {
-      margin-right: 0;
-      margin-bottom: 10px;
-   }
-
-   .about-us-banner h1 {
-      font-size: 50px;
-   }
-
-   .about-us-banner p {
-      font-size: 16px;
-   }
-
-   .logo-grid {
-      justify-content: space-between;
-   }
-
-   .match-container {
-      padding: 50px;
-   }
-
-   .team {
-      width: 200px;
-   }
-
-   .score-box {
-      font-size: 24px;
-   }
-
-   .info-cards {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .info-supplémentaire {
-      width: 90%;
-      margin: 20px 0;
-   }
-}
-
-/* Pour les tél */
-@media (max-width: 768px) {
-   .main-head {
-      padding: 10px;
-   }
-
-   .menu div a {
-      font-size: 14px;
-   }
-
-   .logo-grid {
-      flex-direction: column;
-   }
-
-   .logo-grid img {
-      max-width: 120px;
-   }
-
-   footer {
-      padding: 20px;
-   }
-
-   .icones a img {
-      width: 30px;
-   }
-
-   .about-us-banner h1 {
-      font-size: 40px;
-   }
-
-   .about-us-banner p {
-      font-size: 14px;
-   }
-
-   .match-container {
-      padding: 20px;
-   }
-
-   .team img {
-      width: 80px;
-   }
-
-   .score-box {
-      font-size: 18px;
-   }
-}

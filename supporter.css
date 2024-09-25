@@ -6,9 +6,79 @@
 }
 
 body {
-    background-color: #F4DFB2;
+    background-color: #fef5e1;
 }
 
+/* Header */
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4DFB2;
+    padding: 10px 20px;
+ }
+ 
+ #logocrugel {
+    flex: 1;
+ }
+ 
+ #logocrugel img {
+    max-width: 80px;
+    height: auto;
+ }
+ 
+ .menu {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+ }
+ 
+ .menu div a {
+    color: #470d0a;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 20px;
+ }
+ 
+ .menu div a:hover {
+    background-color: #bcac89;
+    color: #AE312B;
+    border-radius: 5px;
+ }
+ /* Media queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+    .main-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logocrugel {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu div a {
+        margin-right: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logocrugel img {
+        max-width: 40px;
+    }
+
+    .menu div a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
 .heading {
     width: 90%;
     display: flex;
@@ -96,60 +166,23 @@ body {
     border-radius: 25px;
     margin-top: 15px;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-content h2 {
-        font-size: 20px;
-    }
-
-    .about-content p {
-        font-size: 16px;
-    }
-
-    .heading h1 {
-        font-size: 36px;
-    }
-
-    .heading p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .heading h1 {
-        font-size: 30px;
-    }
-
-    .heading p {
-        font-size: 14px;
-    }
-
-    .about-content h2 {
-        font-size: 18px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-    }
-
-    .about-content .En-savoir-plus {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    .container {
-        padding: 30px 10px;
-    }
-}
+/* Footer */
+footer {
+    background-color: #AE312B;
+    padding: 40px;
+    margin-top: 10%;
+    text-align: center;
+    color: #ffffff;
+ }
+  
+ .icones a img {
+    width: 40px;
+    height: auto;
+    margin: 0px;
+ }
+  
+ .contactmentionslegales a {
+    color: #ffffff;
+    padding: 10px;
+ }
 

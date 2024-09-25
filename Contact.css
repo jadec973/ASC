@@ -5,8 +5,78 @@
     box-sizing: border-box;
 }
 body {
-    background: #F4DFB2;
+    background: #fef5e1;
     font-size: 14px;
+}
+/* Header */
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4DFB2;
+    padding: 10px 20px;
+ }
+ 
+ #logocrugel {
+    flex: 1;
+ }
+ 
+ #logocrugel img {
+    max-width: 80px;
+    height: auto;
+ }
+ 
+ .menu {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+ }
+ 
+ .menu div a {
+    color: #470d0a;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 20px;
+ }
+ 
+ .menu div a:hover {
+    background-color: #bcac89;
+    color: #AE312B;
+    border-radius: 5px;
+ }
+ /* Media queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+    .main-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logocrugel {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu div a {
+        margin-right: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logocrugel img {
+        max-width: 40px;
+    }
+
+    .menu div a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
 }
 .container {
     width: 90%;
@@ -91,7 +161,24 @@ tr td:first-child {
 tr td {
     padding-top: 20px;
 }
-
+/* Footer */
+footer {
+    background-color: #AE312B;
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+ }
+  
+ .icones a img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+ }
+  
+ .contactmentionslegales a {
+    color: #ffffff;
+    padding: 10px;
+ }
 /* responsive */
 @media (min-width: 768px) {
     .contact-left {
