@@ -8,6 +8,7 @@
 body {
     background: #fef5e1;
 }
+
 /* Header */
 .main-head {
     display: flex;
@@ -15,37 +16,38 @@ body {
     align-items: center;
     background-color: #F4DFB2;
     padding: 10px 20px;
- }
- 
- #logocrugel {
+}
+
+#logocrugel {
     flex: 1;
- }
- 
- #logocrugel img {
+}
+
+#logocrugel img {
     max-width: 80px;
     height: auto;
- }
- 
- .menu {
+}
+
+.menu {
     display: flex;
     flex: 2;
     justify-content: flex-end;
- }
- 
- .menu div a {
+}
+
+.menu div a {
     color: #470d0a;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
     margin-right: 20px;
- }
- 
- .menu div a:hover {
+}
+
+.menu div a:hover {
     background-color: #bcac89;
     color: #AE312B;
     border-radius: 5px;
- }
+}
+
 /* Media queries pour rendre le header responsive */
 @media screen and (max-width: 768px) {
     .main-head {
@@ -78,6 +80,7 @@ body {
         padding: 6px 10px;
     }
 }
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -88,7 +91,7 @@ body {
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    
+
 }
 
 
@@ -111,7 +114,7 @@ body {
 .container img {
     position: absolute;
     width: 40px;
-    
+
     right: -20px;
     top: 32px;
     z-index: 10;
@@ -165,55 +168,56 @@ body {
     border-right: 15px solid #fff;
     left: -15px;
 }
+
 /* Footer */
 footer {
     background-color: #AE312B;
     padding: 40px;
     text-align: center;
     color: #ffffff;
- }
-  
- .icones a img {
+}
+
+.icones a img {
     width: 40px;
     height: auto;
     margin: 10px;
- }
-  
- .contactmentionslegales a {
+}
+
+.contactmentionslegales a {
     color: #ffffff;
     padding: 10px;
- }
+}
+
 /* responsive */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
     .container {
         width: 100%;
-        padding: 10px 20px;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
     }
 
     .right-container {
         left: 0;
     }
 
-    .container img {
-        left: calc(50% - 20px);
-        right: auto;
-        top: -20px;
-    }
-
-    .timeline::after {
-        left: 50%;
-        margin-left: -3px;
-        top: 0;
-        height: 100%;
-    }
-
-    .left-container-arrow, .right-container-arrow {
-        display: none;
-    }
-
-    .text-box {
-        padding: 20px;
-        font-size: 14px;
+    .left-container img, .right-container img {
+        left: 10;
     }
 }
-
