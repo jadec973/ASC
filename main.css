@@ -1,0 +1,367 @@
+/* Styles généraux */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #fef5e1;
+}
+
+/* Section */
+section {
+   margin-bottom: 100px;
+   margin-top: 100px;
+}
+
+.about-us-banner {
+   margin-top: 0px;
+}
+
+/* Header */
+.main-head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #F4DFB2;
+   padding: 10px 20px;
+}
+ 
+#logocrugel {
+   flex: 1;
+}
+ 
+#logocrugel img {
+   max-width: 80px;
+   height: auto;
+}
+ 
+.menu {
+   display: flex;
+   flex: 2;
+   justify-content: flex-end;
+}
+ 
+.menu div a {
+   color: #AE312B;
+   text-decoration: none;
+   padding: 10px 15px;
+   font-size: 16px;
+   transition: background-color 0.3s, color 0.3s;
+   margin-right: 20px;
+}
+ 
+.menu div a:hover {
+   background-color: #bcac89;
+   color: #AE312B;
+   border-radius: 5px;
+}
+
+/* Section des partenaires */
+.logo-grid {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: #fef5e1;
+}
+
+.logo-grid img {
+   max-width: 150px;
+   height: auto;
+   margin: 10px;
+   transition: transform 0.2s;
+}
+
+.logo-grid img:hover {
+   transform: scale(1.1);
+}
+
+/* Hero*/
+.about-us-banner {
+   position: relative;
+   height: 80vh;
+   background-image: url('logocrugel/club-photo\ copie.webp');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.overlay {
+   text-align: center;
+   color: white;
+   background: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   border-radius: 50px;
+}
+
+.about-us-banner h1 {
+   font-size: 70px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.about-us-banner p {
+   font-size: 18px;
+   margin-top: 10px;
+}
+
+#dernier {
+   color: #AE312B;
+}
+
+/* Résultats des matchs */
+.match-results {
+   padding: 40px 20px;
+}
+
+.match-results h2 {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   color: #333;
+}
+
+.match-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+   width: 300px;
+   text-align: center;
+}
+
+.team img {
+   width: 100px;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.team-name {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+}
+
+.team-location {
+   font-size: 14px;
+   color: #888;
+}
+
+.score {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 20px;
+}
+
+.score-box {
+   font-size: 36px;
+   font-weight: bold;
+   padding: 10px 20px;
+   color: rgb(255, 255, 255);
+   border-radius: 5px;
+}
+
+.score-box.left {
+   background-color: #E57373;
+}
+
+.score-box.right {
+   background-color: #2f7b79;
+}
+
+.vs {
+   font-size: 24px;
+   margin: 10px 0;
+   font-weight: bold;
+}
+
+.match-details {
+   font-size: 14px;
+   color: #888;
+   margin-top: 10px;
+}
+
+/* Info Cards */
+.info-cards {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.info-supplémentaire {
+   margin: 10px;
+   padding: 20px;
+   color: white;
+   border-radius: 5px;
+   transition: transform 0.2s;
+   width: 280px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 200px;
+}
+
+.info-supplémentaire:hover {
+   transform: scale(1.02);
+}
+
+/* Couleurs des partie sport */
+.card-1 {
+   background-color: #AE312B;
+}
+
+.card-2 {
+   background-color: #e6bd66;
+}
+
+.card-3 {
+   background-color: #39A181;
+}
+
+.info-button {
+   margin: 0 auto 10px auto;
+   padding: 10px 15px;
+   background-color: #05192d;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   align-self: center;
+}
+
+.info-button:hover {
+   background-color: #E57373;
+}
+
+/* Footer */
+footer {
+   background-color: #AE312B;
+   padding: 40px;
+   text-align: center;
+   color: #ffffff;
+}
+
+.icones a img {
+   width: 40px;
+   height: auto;
+   margin: 10px;
+}
+
+.contactmentionslegales a {
+   color: #ffffff;
+   padding: 10px;
+}
+
+/* Responsive Design */
+
+/* Pour tablettes */
+@media (max-width: 1024px) {
+   .main-head {
+      flex-direction: column;
+      padding: 20px;
+   }
+
+   .menu {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu div a {
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+
+   .about-us-banner h1 {
+      font-size: 50px;
+   }
+
+   .about-us-banner p {
+      font-size: 16px;
+   }
+
+   .logo-grid {
+      justify-content: space-between;
+   }
+
+   .match-container {
+      padding: 50px;
+   }
+
+   .team {
+      width: 200px;
+   }
+
+   .score-box {
+      font-size: 24px;
+   }
+
+   .info-cards {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .info-supplémentaire {
+      width: 90%;
+      margin: 20px 0;
+   }
+}
+
+/* Pour les tél */
+@media (max-width: 768px) {
+   .main-head {
+      padding: 10px;
+   }
+
+   .menu div a {
+      font-size: 14px;
+   }
+
+   .logo-grid {
+      flex-direction: column;
+   }
+
+   .logo-grid img {
+      max-width: 120px;
+   }
+
+   footer {
+      padding: 20px;
+   }
+
+   .icones a img {
+      width: 30px;
+   }
+
+   .about-us-banner h1 {
+      font-size: 40px;
+   }
+
+   .about-us-banner p {
+      font-size: 14px;
+   }
+
+   .match-container {
+      padding: 20px;
+   }
+
+   .team img {
+      width: 80px;
+   }
+
+   .score-box {
+      font-size: 18px;
+   }
+}

@@ -1,0 +1,121 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef5e1;
+ }
+ 
+ /* Section */
+ section {
+    margin-bottom: 100px;
+    margin-top: 100px;
+ }
+ 
+ .about-us-banner {
+    margin-top: 0px;
+ }
+ 
+ /* Header */
+ .main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4DFB2;
+    padding: 10px 20px;
+ }
+  
+ #logocrugel {
+    flex: 1;
+ }
+  
+ #logocrugel img {
+    max-width: 80px;
+    height: auto;
+ }
+ 
+ .menu {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    
+ }
+  
+ .menu div a {
+    color: #AE312B;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 20px;
+ }
+  
+ .menu div a:hover {
+    background-color: #d9bf86;
+    color: #AE312B;
+    border-radius: 5px;
+ }
+
+ .actualites-container {
+   max-width: 1200px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.article {
+   margin-bottom: 20px;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: 10px;
+   text-align: center; 
+}
+
+.article h2 {
+   font-size: 24px;
+   color: #AE312B;
+}
+
+.article p {
+   font-size: 16px;
+   color: #0b0000;
+}
+
+.article a {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 8px 12px;
+   background-color: #266c57;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 4px;
+   margin: 0 auto; 
+}
+
+.article a:hover {
+   background-color: #39A181;
+}
+
+/* Footer styles */
+
+footer {
+   background-color: #AE312B;
+   padding: 40px;
+   text-align: center;
+   color: #ffffff;
+}
+
+.icones a img {
+   width: 40px;
+   height: auto;
+   margin: 10px;
+}
+
+.contactmentionslegales a {
+   color: #ffffff;
+   padding: 10px;
+}
+ 
