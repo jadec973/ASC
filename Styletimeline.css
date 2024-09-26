@@ -218,6 +218,11 @@ footer {
     }
 
     .left-container img, .right-container img {
-        left: 10;
+        left: 10px;
     }
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+        }
 }
