@@ -1,1 +1,143 @@
-.container p,h1{margin-bottom:10px}*,textarea{box-sizing:border-box}.contact-left h3,label{color:#ae312b}*{margin:0;padding:0;font-family:Poppins,sans-serif}body{background:#fef5e1;font-size:14px}.main-head{display:flex;justify-content:space-between;align-items:center;background-color:#f4dfb2;padding:10px 20px}#logocrugel{flex:1}#logocrugel img{max-width:80px;height:auto}.menu{display:flex;flex:2;justify-content:flex-end}.menu div a{color:#470d0a;text-decoration:none;padding:10px 15px;font-size:16px;transition:background-color .3s,color .3s;margin-right:20px}.menu div a:hover{background-color:#bcac89;color:#ae312b;border-radius:5px}.container{width:80%;margin:50px auto}.contact-box{background:#fff;display:flex;flex-direction:row;justify-content:space-between}.contact-right,button{background:#ae312b;color:#fff}.contact-left{flex-basis:60%;padding:40px 60px}.contact-right{flex-basis:40px;padding:40px}.container p{text-align:center}.input-row{display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:20px}.input-group{flex-basis:100%;margin-bottom:20px}.input-group input,textarea{width:100%;border:none;border-bottom:1px solid #ccc;outline:0;padding-bottom:5px}textarea{width:100%;border:1px solid #ccc;outline:0;padding:10px}label{margin-bottom:6px;display:block}button{width:100px;border:none;outline:0;height:35px;border-radius:30px;margin-top:20px;box-shadow:0 5px 15px 0 rgba(28,0,181,.3)}.contact-left h3,.contact-right h3{font-weight:600;margin-bottom:30px}footer,tr td a{color:#fff}tr td:first-child{padding-right:20px}tr td{padding-top:20px}footer{background-color:#ae312b;padding:40px;text-align:center}.footer .icones a img{width:40px;height:auto;margin:10px}.contactmentionslegales a{color:#fff;padding:10px}@media screen and (max-width:768px){.main-head{flex-direction:column;align-items:center}#logocrugel{margin-bottom:10px}.menu{justify-content:center}.menu div a{margin-right:10px;font-size:14px;padding:8px 12px}.contact-left,.contact-right{flex-basis:100%;padding:20px}.contact-box{flex-direction:column}}@media screen and (max-width:480px){#logocrugel img{max-width:40px}.menu div a{font-size:12px;padding:6px 10px}.contact-left,.contact-right{padding:10px}button{width:80px;height:30px}}
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef5e1;
+ }
+ 
+ /* Section */
+ section {
+    margin-bottom: 100px;
+    margin-top: 100px;
+ }
+ 
+ .about-us-banner {
+    margin-top: 0px;
+ }
+ 
+ /* Header */
+ .main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4DFB2;
+    padding: 10px 20px;
+ }
+ 
+ #logocrugel {
+    flex: 1;
+ }
+ 
+ #logocrugel img {
+    max-width: 80px;
+    height: auto;
+ }
+ 
+ .menu {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+   
+ }
+ 
+ .menu div a {
+    color: #AE312B;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 20px;
+ }
+ 
+ .menu div a:hover {
+    background-color: #d9bf86;
+    color: #AE312B;
+    border-radius: 5px;
+ }
+ 
+ .actualites-container {
+   max-width: 1200px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ 
+.article {
+   margin-bottom: 20px;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: 10px;
+   text-align: center;
+}
+ 
+.article h2 {
+   font-size: 24px;
+   color: #AE312B;
+}
+ 
+.article p {
+   font-size: 16px;
+   color: #0b0000;
+}
+ 
+.article a {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 8px 12px;
+   background-color: #266c57;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 4px;
+   margin: 0 auto;
+}
+ 
+.article a:hover {
+   background-color: #39A181;
+}
+ 
+/* Footer styles */
+ 
+footer {
+   background-color: #AE312B;
+   padding: 40px;
+   text-align: center;
+   color: #ffffff;
+}
+ 
+.icones a img {
+   width: 40px;
+   height: auto;
+   margin: 10px;
+}
+ 
+.contactmentionslegales a {
+   color: #ffffff;
+   padding: 10px;
+}
+ 
+.heading p {
+   font-size: 18px;
+   color: #666;
+   margin-bottom: 35px;
+}
+ 
+@media (max-width: 1024px) {
+   .main-head {
+      flex-direction: column;
+      padding: 20px;
+   }
+ 
+   .menu {
+      flex-direction: column;
+      align-items: center;
+   }
+ 
+   .menu div a {
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+}
